@@ -76,6 +76,9 @@ html {
 
 .navbar {
     background-color: #333;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .nav-links li a {
@@ -354,4 +357,15 @@ body::-webkit-scrollbar-thumb:hover {
     height: 20px;
     margin-right: 10px;
     fill: white;
+}
+
+.footer {
+    font: bold 1em 'Courier New', monospace;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
