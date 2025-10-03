@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DVs Portfolio</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h3>Hi, I'm</h3>
+            <h1>Devansh Vats</h1>
+            <p>A developer interested in learning and building projects using Python, SQL, JavaScript, ML and many more...</p>
+            <br><br><br><br><br><br><br>
+            <a href="#about" class="scroll-button">
+                <img src="images\scroll-down-cut.png" alt="Scroll Down" class="scroll-icon">
+            </a>
+        </section>
+
+        <section id="about">
+            <h2 class="about-heading">About Me</h2>
+            <p class="about-intro"> I am Devansh Vats, currently pursuing B.Tech in Computer Science and Engineering with specialization in Data Science and AI, I have a strong interest in learning about data handling, programming, and new technologies. I have a foundational understanding of Python, SQL and data handling using libraries like Pandas. I am familiar with cloud platforms such as Microsoft Azure and have basic experience working with data pipelines and databases. I am motivated, detail-oriented, and always eager to learn, adapt, and grow. I aspire to become a skilled and impactful developer in the tech industry.</p>
+            <br>
+            <h2 class="about-heading">My Skills & Learning Interests</h2>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Data Analysis</li>
+                <li>Machine Learning</li>
+                <li>Azure</li>
+                <li>Git & GitHub</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                </ul>
+        </section>
+
+        <section id="projects">
+            <h2 class="projects-heading">My Projects</h2>
+            <div class="project-card">
+                <h3 class="project-card-heading">Object Measurement using OpenCV</h3>
+                <p class="project-card-desc">
+                    This project performs object detection and real-world dimension measurement using OpenCV. An A4 sheet is used as a reference object, and any item placed on top of it is detected, outlined, and measured in centimeters. This system uses computer vision to: <br>
+                    <ul class="project-card-list">
+                        <li>Detect the A4 sheet in the image or video.</li>
+                        <li>Adjust the perspective to get a top-down view of the A4 sheet.</li>
+                        <li>Identify and outline any quadrilateral objects on the A4 sheet.</li>
+                        <li>Calculate and display their actual width and height in centimeters.</li>
+                    </ul>
+                </p>
+                <a 
+                    href="https://github.com/00DV001/ObjectMeasurementTool" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="github-button" 
+                    title="View on GitHub">
+                    <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.011-1.042-.016-2.046-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.332-1.755-1.332-1.755-1.09-.745.083-.73.083-.73 1.205.084 1.838 1.238 1.838 1.238 1.07 1.835 2.809 1.305 3.495.998.108-.775.419-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.385 1.235-3.22-.12-.3-.537-1.52.117-3.175 0 0 1.008-.323 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.29-1.553 3.298-1.23 3.298-1.23.654 1.655.237 2.875.117 3.175.77.835 1.23 1.91 1.23 3.22 0 4.612-2.805 5.62-5.475 5.92.43.37.823 1.102.823 2.222 0 1.606-.015 2.894-.015 3.287 0 .323.218.69.825.575C20.565 22.094 24 17.59 24 12.297c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+            <div class="project-card">
+                <h3 class="project-card-heading">Spam Detection using ML</h3>
+                <p class="project-card-desc">
+                    This project aims to identify spam messages from genuine (ham) ones using machine learning techniques. What it does:<br>
+                    <ul class="project-card-list">
+                        <li>Data Preprocessing: Cleaning and preparing the text data for analysis.</li>
+                        <li>Feature Extraction: Using TF-IDF to convert text messages into numerical features.</li>
+                        <li>Model Training: Implementing a Multinomial Naive Bayes classifier to learn from the data.</li>
+                        <li>Evaluation: Assessing the model's performance using accuracy, precision, recall, and F1-score metrics.</li>
+                    </ul>
+                </p>
+                <a 
+                    href="https://github.com/00DV001/SMS-SpamIdentification" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="github-button" 
+                    title="View on GitHub">
+                    <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.011-1.042-.016-2.046-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.332-1.755-1.332-1.755-1.09-.745.083-.73.083-.73 1.205.084 1.838 1.238 1.838 1.238 1.07 1.835 2.809 1.305 3.495.998.108-.775.419-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.385 1.235-3.22-.12-.3-.537-1.52.117-3.175 0 0 1.008-.323 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.29-1.553 3.298-1.23 3.298-1.23.654 1.655.237 2.875.117 3.175.77.835 1.23 1.91 1.23 3.22 0 4.612-2.805 5.62-5.475 5.92.43.37.823 1.102.823 2.222 0 1.606-.015 2.894-.015 3.287 0 .323.218.69.825.575C20.565 22.094 24 17.59 24 12.297c0-6.627-5.373-12-12-12z"/>
+                    </svg> GitHub
+                </a>
+            </div>
+        </section>
+
+        <section id="internships">
+            <h2 class="internships-heading">Internship Experience</h2>
+
+            <div class="internship-card">
+                <h3 class="internship-title">Data Engineering Intern - Celebal Technologies</h3>
+                <p class="internship-info">IT / Computers - Software | <span class="dates">02 Jun, 2025 - 3 Aug, 2025</span></p>
+                <div class="key-skills">
+                    <strong>Key Skills:</strong>
+                    <span class="skill-button">Data Engineering</span>
+                    <span class="skill-button">SQL</span>
+                    <span class="skill-button">MySQL</span>
+                    <span class="skill-button">Python</span>
+                    <span class="skill-button">Microsoft Azure</span>
+                    <span class="skill-button">Databricks</span>
+                </div>
+                <p class="internship-description">
+                    I worked as a Data Engineering Intern at CSI, Celebal Technologies. My role involved building and optimizing data pipelines to support
+                    advanced analytics and business intelligence. I work with Microsoft Azure services, including Azure Data Factory (ADF) and Databricks,
+                    for scalable data integration and transformation. My focus is on delivering reliable, high-performance data solutions by combining cloud
+                    tools, big data technologies, and best practices in data engineering to ensure seamless data flow and accessibility across various
+                    platforms and use cases.
+                </p>
+            </div>
+
+            <div class="internship-card">
+                <h3 class="internship-title">Data Migration Intern - AAP Technologies Inc.</h3>
+                <p class="internship-info">IT / Computers - Software | <span class="dates">03 Jul, 2024 - 31 Jul, 2024</span></p>
+                <div class="key-skills">
+                    <strong>Key Skills:</strong>
+                    <span class="skill-button">Data Migration</span>
+                    <span class="skill-button">Python</span>
+                    <span class="skill-button">Threads</span>
+                    <span class="skill-button">SQL</span>
+                    <span class="skill-button">MySQL</span>
+                    <span class="skill-button">PostgreSQL</span>
+                </div>
+                <p class="internship-description">
+                    I worked as a Data Migration Intern at AAP Technologies Inc. As a complete fresher, I contributed to a Python-based project focused on
+                    migrating data from MySQL to PostgreSQL. My role involved understanding and modifying code that used threading to enhance
+                    performance during the migration process. I gained hands-on experience in database connectivity, schema mapping, and optimizing
+                    data transfer operations. This internship helped me build a strong foundation in Python programming, multithreading concepts, and
+                    relational databases, while also improving my problem-solving and debugging skills in a real-world, production-level environment.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>I'm currently looking for new opportunities. Connect me on LinkedIn.</p>
+            <a 
+            href="https://www.linkedin.com/in/devansh-vats-73060a273/" 
+            class="linkedin-button" 
+            target="_blank"
+            title="Connect on LinkedIn">
+            <svg class="linkedin-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.447 20.452h-3.554v-5.629c0-1.35.024-3.083-1.875-3.083-1.879 0-2.167 1.464-2.167 2.986v5.726h-3.554V9.293h3.414v1.579h.048c.477-.904 1.636-1.875 3.37-1.875 3.601 0 4.267 2.378 4.267 5.467v6.079zM5.337 7.733a2.44 2.44 0 0 1-2.442-2.438 2.44 2.44 0 0 1 2.442-2.438c1.343 0 2.442 1.095 2.442 2.438 0 1.343-1.099 2.438-2.442 2.438zM6.983 9.293H3.69v11.159h3.293V9.293z"/>
+            </svg>
+            Connect on LinkedIn
+        </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Devansh Vats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    background-color: #8d4fff;
+    font: bold 16px Courier New, monospace;
+    transition: all 0.9s ease;
+}
+
+#hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 300px;
+    background: #f4f4f4;
+}
+
+#hero h3 {
+    font: bold 1.5em 'Courier New', monospace;
+    margin-bottom: 10px;
+}
+
+#hero h1 {
+    font: bolder 5em 'Courier New', monospace;
+    font-size: 3.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+#hero p {
+    font: bold 1em 'Courier New', monospace;
+    font-size: 1.2em;
+    color: #2b2b2b;
+    margin-top: 10px;
+}
+
+.scroll-icon {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    font-size: 2em;
+    color: #8d4fff;
+    animation: bounce 3.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    40% {
+        transform: translateY(-20px) translateX(-50%); 
+    }
+    60% {
+        transform: translateY(-10px) translateX(-50%); 
+    }
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.nav-links li a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.nav-links li a:hover{
+    background-color: #6e25f6;
+}
+
+
+body::-webkit-scrollbar {
+    width: 5px !important; 
+    height: 5px !important;
+    background-color: rgb(183, 183, 183); 
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(189, 189, 189); 
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #000000a2; 
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0); 
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #000000a2; 
+}
+
+#about {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 100px 240px;
+    background: #e0e0e0;
+    text-align: justify;
+}
+
+#about .about-heading {
+    font: bolder 2em 'Courier New', monospace;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about .about-intro {
+    font: bold 1em 'Courier New', monospace;
+    margin-bottom: 30px;
+    color: #222222;
+    line-height: 1.6;
+}
+
+#about .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font: bold 1em 'Courier New', monospace;
+    color: #555;
+    gap: 15px;
+}
+
+#about .skills-list li {
+    cursor: pointer;
+    background: #8d4fff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+#about .skills-list li:hover {
+    background: #6e25f6;
+}
+
+#projects {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 100px 240px;
+    background: #f4f4f4; 
+}
+
+#projects .projects-heading {
+    font: bolder 2em 'Courier New', monospace;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#projects .project-card {
+    font: bold 1em 'Courier New', monospace;
+    color: #000000;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#projects .project-card-desc {
+    font: bold 1em 'Courier New', monospace;
+    color: #303030;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#projects .project-card-list {
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.github-button {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center;
+    padding: 8px 15px;
+    border: 2px solid #333; 
+    background-color: #333; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.github-button:hover {
+    background-color: #555; 
+    border-color: #555;
+}
+
+.github-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px; 
+    fill: white; 
+}
+
+#internships {
+    width: 100vw;
+    min-height: 50vh;
+    padding: 100px 240px;
+    background: #e0e0e0; 
+}
+
+.internships-heading {
+    
+    font: bolder 2em 'Courier New', monospace;
+    margin-bottom: 30px; 
+    color: #333;
+    text-align: left; 
+}
+
+.internship-card {
+    font: bold 1em 'Courier New', monospace;
+    color: #000000;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.internship-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.internship-title {
+    font: bolder 1.2em 'Courier New', monospace;
+    color: #8d4fff;
+    margin-bottom: 5px;
+}
+
+.internship-info {
+    font: bold 0.9em 'Courier New', monospace;
+    color: #555;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.key-skills {
+    font: bold 1em 'Courier New', monospace;
+    color: #333;
+    margin-bottom: 15px;
+    padding: 5px 0;
+    border-top: none; 
+    border-bottom: none; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    align-items: center;
+}
+
+.skill-button {
+    cursor: pointer;
+    background: #8d4fff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font: bold 0.9em 'Courier New', monospace;
+    white-space: nowrap;
+}
+
+.skill-button:hover {
+    background: #6e25f6;
+}
+
+.key-skills strong {
+    color: #222222;
+}
+
+.internship-description {
+    font: bold 1em 'Courier New', monospace;
+    color: #303030;
+    line-height: 1.6;
+}
+
+#contact {
+    font: bold 1em 'Courier New', monospace;
+    width: 100vw;
+    min-height: 10vh;
+    padding: 70px 240px;
+    background: #000000e7;
+    text-align: end left;
+}
+
+#contact h2 {
+    font: bolder 2em 'Courier New', monospace;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#contact p {
+    font: bold 1em 'Courier New', monospace;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.linkedin-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 30px;
+    background-color: #0077b5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.linkedin-button:hover {
+    background-color: #005f93;
+    transform: scale(1.05);
+}
+
+.linkedin-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: white;
+}
